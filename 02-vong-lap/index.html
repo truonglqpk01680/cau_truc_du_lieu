@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="https://github.com/hohieuit/javascript-coban/blob/master/de%20bai/1_function.txt">
+    <script src="javascript.js"></script>
+    <title>Bài tập về vòng lặp</title>
+</head>
+<body>
+    <div id="ketQua">
+
+    </div>
+    <script>
+        //truy cập node trên giao diện
+      var nodeKetQua = document.getElementById("ketQua");
+
+      var HTMLKetQua = "";
+
+      //bài 1: tính tổng 2 số
+      HTMLKetQua = HTMLKetQua + `<p>1. Xuất ra tin nhắn n lần: ${xuatTinNhan(5)}</p>`+`<br>`;
+      HTMLKetQua = HTMLKetQua + `<p>2. Xuất ra dòng chữ 10 lần: ${xuatRaDongChu(10)}</p>`+`<br>`;
+      HTMLKetQua = HTMLKetQua + `<p>3. Tính tổng từ 1 tới n: ${tinhTongTrongKhoang(101)}</p>`+`<br>`;
+      HTMLKetQua = HTMLKetQua + `<p>4. Tính tổng từ 1 tới 500: ${ tinhTongTu1Toi500(500)}</p>`+`<br>`;
+     
+      HTMLKetQua = HTMLKetQua + `<p>5. Tổng từ a tới b là: ${ tinhTongAToB(3,10)}</p>`+`<br>`;
+      HTMLKetQua = HTMLKetQua + `<p>6. Tổng từ 20 tới 76 là: ${ tinhTong20Toi76(20,76)}</p>`+`<br>`;
+      HTMLKetQua = HTMLKetQua + `<p>7. Tổng các số lẻ từ a tới b là: ${ tinhTongSoLeTuAToiB(1,10)}</p>`+`<br>`;
+      HTMLKetQua = HTMLKetQua + `<p> 8.  Tổng từ 1 tới 100 tính toán tổng từ 20 tới 76 là: ${ tinhTongTu1Toi100(20,76)}</p>`+`<br>`;
+
+      HTMLKetQua = HTMLKetQua + `<p>9. Số lẻ nhỏ nhất là: ${xuatSoLeNhoNhat(5)}</p>`+`<br>`;
+      HTMLKetQua = HTMLKetQua + `<p>10. Sử dụng hàm (9) xuất ra 100 số lẻ gần nhất : ${xuatSoLeGanNhat(100)}</p>`+`<br>`;
+      HTMLKetQua = HTMLKetQua + `<p>11. xuất n số lẻ từ m là: ${xuatSoLeNToM(5,11)}</p>`;
+      HTMLKetQua = HTMLKetQua + `<p>12.Xuất 57 số lẻ từ 1005 là: ${xuat57SoLeTu1005(57,1005)}</p>`;
+      HTMLKetQua = HTMLKetQua + `<p>13.Kiểm tra là:  ${ kiemTraSoNguyenTo(4)}</p>`;
+      HTMLKetQua = HTMLKetQua + `<p>14.n số nguyên tố nhỏ nhất là:  ${ xuatNSoNguyenToBeNhat(3)}</p>`;
+      HTMLKetQua = HTMLKetQua + `<p>15.20 số nguyên tố nhỏ nhất là:  ${ xuatNSoNguyenToBeNhat(20)}</p>`;
+      HTMLKetQua = HTMLKetQua + `<p>16.n số nguyên tố nhỏ nhất từ m là:  ${ xuatNSoNguyenTuM(4,20)}</p>`;
+      HTMLKetQua = HTMLKetQua + `<p>16. 20 số nguyên tố nhỏ nhất từ 1000 là:  ${ xuat20SoNguyenToTu1000(20,1000)}</p>`;
+     
+
+      
+      
+
+      // ghi kết quả ra giao diện
+      nodeKetQua.innerHTML=HTMLKetQua;
+
+    </script>
+</body>
+</html>

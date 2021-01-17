@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="https://github.com/hohieuit/javascript-coban/blob/master/de%20bai/1_function.txt">
+    <script src="javascript.js"></script>
+    <title>Bài tập về hàm</title>
+</head>
+<body>
+    <div id="ketQua">
+
+    </div>
+    <script>
+        //truy cập node trên giao diện
+      var nodeKetQua = document.getElementById("ketQua");
+      var HTMLKetQua = "";
+
+      //bài 1: tính tổng 2 số
+      var a = parseInt(prompt("nhập số a"));
+      var b = parseInt(prompt("nhập số b"));
+
+      HTMLKetQua = HTMLKetQua + `<p>Tổng hai số a + b là: ${tinhTong(a,b)}</p>`;
+      HTMLKetQua = HTMLKetQua + `<p>Hiệu hai số a + b là: ${tinhHieu(a,b)}</p>`;
+      HTMLKetQua = HTMLKetQua + `<p>Tổng hai số n1, n2 là: ${tinhTong2(a,b)}</p>`;
+      HTMLKetQua = HTMLKetQua + `<p>Hiệu hai số n1, n2 là: ${tinhHieu2(a,b)}</p>`;
+      HTMLKetQua = HTMLKetQua + `<p>Tích hai số n1, n2 là: ${tinhTich(a,b)}</p>`;
+      HTMLKetQua = HTMLKetQua + `<p>Thương hai số n1, n2 là: ${tinhThuong(a,b)}</p>`;
+      HTMLKetQua = HTMLKetQua + `<p>Số lớn hơn trong hai số n1, n2 là: ${timSoLon(a,b)}</p>`;
+      HTMLKetQua = HTMLKetQua + `<p>Số bé hơn trong hai số hai số n1, n2 là: ${timSoBe(a,b)}</p>`;
+      HTMLKetQua = HTMLKetQua + `<p>Trung bình cộng hai số a và b là: ${tinhTrungBinh(a,b)}</p>`;
+
+      HTMLKetQua = HTMLKetQua + `<p>a chia b dư: ${chiaLayDu(a,b)}</p>`;
+      HTMLKetQua = HTMLKetQua + `<p>kq: ${chiaHet(a,b)}</p>`;
+      HTMLKetQua = HTMLKetQua + `<p>kq là: ${chiaHet2(a,b)}</p>`;
+      HTMLKetQua = HTMLKetQua + `<p>chu vi hình chữ nhật có 2 cạnh a và b là: ${chuViHCN(a,b)}</p>`;
+      HTMLKetQua = HTMLKetQua + `<p>diện tích hình chữ nhật có 2 cạnh a và b là: ${dienTichHCN(a,b)}</p>`;
+      HTMLKetQua = HTMLKetQua + `<p>Chu vi hình tròn bán kính a: ${chuViHinhTron(a)} </p>`;
+      HTMLKetQua = HTMLKetQua + `<p>diện tích hình tròn bán kính a: ${dienTichHinhTron(a)}</p>`;
+      HTMLKetQua = HTMLKetQua + `<p>Xuất in hoa các chuỗi truyền vào: ${inHoa()}</p>`;
+      HTMLKetQua = HTMLKetQua + `<p>Xuất in hoa 5  chuỗi truyền vào: ${inHoa5()}</p>`;
+      HTMLKetQua = HTMLKetQua + `<p>Viết hàm nối 2 chuỗi : ${ noiChuoi(s1,s2)}</p>`;
+      HTMLKetQua = HTMLKetQua + `<p>Viết hàm nối 5 chuỗi : ${ noi5Chuoi()}</p>`;
+      HTMLKetQua = HTMLKetQua + `<p>Kiểm tra chuỗi 2 có trong chuỗi 1: ${ kiemTraChuoi()}</p>`;
+      HTMLKetQua = HTMLKetQua + `<p>Kiểm tra chuỗi s2 có trong chuỗi s1: ${ kiemTraChuoiS2InS1()}</p>`;
+      HTMLKetQua = HTMLKetQua + `<p>Đo độ dài 5 chuỗi: ${  doDoDai()}</p>`;
+      HTMLKetQua = HTMLKetQua + `<p>Cắt chuỗi: ${   catChuoi()}</p>`;
+      HTMLKetQua = HTMLKetQua + `<p>Kiểm tra sự tồn tại : ${setSuTonTai()}</p>`;
+      
+     
+     
+     
+      // ghi kết quả ra giao diện
+      nodeKetQua.innerHTML=HTMLKetQua;
+ //… Hoặc đẩy một kho lưu trữ hiện có từ dòng lệnh
+// git remote add origin https://github.com/truonglqpk01680/bitp.git
+//  git branch -M main 
+// git push -u origin main
+
+    </script>
+</body>
+</html>
