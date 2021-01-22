@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="https://github.com/hohieuit/javascript-coban/blob/master/de%20bai/1_function.txt">
+    <script src="javascript.js"></script>
+    <title>Bài tập về </title>
+</head>
+<body>
+    <div id="ketQua">
+
+    </div>
+    <script>
+              var nodeKetQua = document.getElementById("ketQua");
+              var HTMLKetQua = "";
+      var n = 100;
+      var array = ["Bóng đá", "Bóng chuyền", "Bóng bàn", "Bóng bàn"];
+      var chuoiCanTim = "Bóng bàn";
+      HTMLKetQua = HTMLKetQua +`Bài 1: ${listNumber(10)}</h1>`+`<br>`;
+      HTMLKetQua = HTMLKetQua +`Bài 2: ${listFavorite()}</h1>`+`<br>`;
+      HTMLKetQua = HTMLKetQua + `Bài 5: ${getLessThan(n)}</h1>`+`<br>`;
+      HTMLKetQua = HTMLKetQua +`Bài 7: ${getOddLessThan(n)}</h1>`+`<br>`;
+      HTMLKetQua = HTMLKetQua + ` Mảng a gồm các phần tử: ${array}</h1>`+`<br>`;
+      HTMLKetQua = HTMLKetQua +` Chuỗi cần tìm là: ${chuoiCanTim}</h1>`+`<br>`;
+      HTMLKetQua = HTMLKetQua +`Bài 9: Vị trí xuất hiện đầu tiên là: ${findFirst(array,chuoiCanTim)}</h1>`+`<br>`;
+      HTMLKetQua = HTMLKetQua +`Bài 10: Vị trí xuất hiện cuối cùng là: ${findLast(array,chuoiCanTim)}</h1>`+`<br>`;
+      HTMLKetQua = HTMLKetQua +`11. Viết hàm tìm ra vị trí phần tử cuối cùng nằm trong mảng : ${findLast(arr)}</h1>`+`<br>`;
+      HTMLKetQua = HTMLKetQua +`13. Viết hàm tìm ra vị trí tất cả phần tử nằm trong mảng : ${find(arr)}</h1>`+`<br>`;
+      HTMLKetQua = HTMLKetQua +` 15. Viết hàm thêm một phần tử vào mảng: ${add(arr)}</h1>`+`<br>`;
+      HTMLKetQua = HTMLKetQua +`17. Viết hàm thêm một phần tử vào mảng, nhưng nếu phần tử đó đã tồn tại thì ko thêm nữa.: ${addIfNotExist(arr)}</h1>`+`<br>`;
+    //   HTMLKetQua = HTMLKetQua +` 19. Viết hàm xoá toàn bộ phần tử ra khỏi mảng : ${xoaPhanTu("hôm nay tôi buồn","buồn")}</h1>`+`<br>`;
+      // Show ket qua ra man hinh
+      nodeKetQua.innerHTML=HTMLKetQua;
+   
+    </script>
+</body>
+</html>
